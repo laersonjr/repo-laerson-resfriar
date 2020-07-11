@@ -1,0 +1,227 @@
+@charset "ISO-8859-1";
+
+
+* {
+	font-family: "Arial";
+}
+
+body {
+	background-color: #0080ff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+img {
+	border-left: 10px solid #000040;
+	border-right: 10px solid #000040;
+	border-top: 2px solid #000040;
+	border-bottom: 2px solid #000040;
+	border-radius: 30px;
+}
+
+nav a {
+	/*placement for code pen*/
+	margin: 1%;
+	/*Button Text Style*/
+	font-size: inherit;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	/*Button Color @ Border*/
+	border: 4px solid #000040; /*#000080 */
+	color: #000040;
+	background: #fff;
+	outline: none;
+	/*Position, Display, Size*/
+	position: relative;
+	display: inline-block;
+	padding: 10px 10px 8px;
+	cursor: pointer;
+	width: auto;
+}
+
+a:after {
+	/*Make a:after be as big as button*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*Give a:after Border @ Background color*/
+	border: 2px solid #000040;
+	background-color: #000040;
+	/*Decide Location of a:after..this gives a           bottom right shadow*/
+	left: 4px;
+	top: 4px;
+	/*Place a:after behind button*/
+	z-index: -1;
+	content: '';
+	/*Animation/Transition Speed*/
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+a:hover {
+	top: 2px;
+	left: 2px;
+	text-decoration: underline;
+}
+
+a:hover:after {
+	top: -2px;
+	left: -2px;
+}
+
+h1
+{
+	color: #000040;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 20px;
+	padding: 5px;
+	width: 400px;
+	border-left: 10px solid #000040;
+	border-right: 10px solid #000040;
+	border-top: 2px solid #000040;
+	border-bottom: 2px solid #000040;
+	border-radius: 30px;
+}
+
+h1,
+div#infoMessage,
+fieldset,
+table {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+div#infoMessage {
+	background-color: #ffcc00;
+	width: 400px;
+	border-radius: 5px;
+	padding: 10px;
+	color: #d40000;
+}
+
+fieldset {
+	background-color: #ffffff;
+	width: 400px;
+	text-align: left;
+	border-radius: 5px;
+	border: 0px;
+}
+
+legend {
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: #000040;
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 7px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: inherit;
+	border-radius: 5px;
+}
+
+label {
+	color: #000040;
+}
+
+input,
+select {
+	border: 1px solid #000040;
+	margin-bottom: 7px;
+}
+
+input[type=text]#nome,
+input[type=text]#rua {
+	width: 95%;
+}
+
+input[type=text]#numero {
+	width: 15%;
+}
+
+input[type=text]#bairro,
+input[type=text]#cidade {
+	width: 50%;
+}
+
+input[type=text]#cep {
+	width: 20%;
+}
+
+input[type=tel]#dddFixo,
+input[type=tel]#dddCelular {
+	width: 5%;
+}
+
+input[type=button],
+input[type=submit]
+{
+	background-color: #004080;
+	border-bottom: 3px solid #000040;
+	border-top: 1px solid #000040;
+	border-right: 1px solid #000040;
+	border-left: 1px solid #000040;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 5px 8px;
+}
+
+input[type=button]#adicionar {
+	background-color: #00ff40;
+	border-bottom: 3px solid #008000;
+	border-top: 1px solid #008000;
+	border-right: 1px solid #008000;
+	border-left: 1px solid #008000;
+	text-transform:uppercase;
+	border-radius: 5px;
+	padding: 5px 8px; 
+}
+
+input[type=button]#adicionar:hover {
+	background-color: #80ff00;
+	border-bottom: 3px solid #008000;
+} 
+
+input[type=button]:hover,
+input[type=submit]:hover
+{
+	background-color: #0080c0;
+	border-bottom: 3px solid #000040;
+}
+
+table {
+	background-color: #ffffff;
+	font-size: 10px;
+	border-spacing: 1px;
+	border-collapse: separate;
+}
+
+th {
+	background-color: #5b7b1d;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 3px;
+}
+
+td {
+	padding: 3px;
+}
+
+tr:nth-child(even) {
+	background-color: #c0c0c0;
+}
+
+tr:nth-child(odd) {
+	background-color: #dadada;
+}

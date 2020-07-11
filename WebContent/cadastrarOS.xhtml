@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+	
+	<ui:composition template="layoutPage.xhtml">
+		<!--  Cabeçalho - Fim -->
+		
+		<ui:define name="conteudo" >
+		<form jsf:id="form">
+				<input type="hidden" jsf:value="" />
+				
+				<fieldset>
+					<legend>Fornecedor</legend>
+						<label for="fornecedor">Fornecedor</label><br />
+						<select jsf:value=""  id="fornecedor" size="0" jsf:label="Fornecedor">
+							<f:selectItem itemLabel="Selecione" itemValue="" />
+						</select><br />		
+				</fieldset><br />
+				
+				<fieldset>
+					<legend>Cliente</legend>
+						<label for="cliente">Cliente</label><br />
+						<select jsf:value=""  id="cliente" size="0" jsf:label="Cliente">
+							<f:selectItem itemLabel="Selecione" itemValue="" />
+						</select><br />		
+				</fieldset><br />
+				
+				<fieldset>
+					<legend>Chamado</legend>
+						<table>
+							<tr>
+								<th>Motivo do chamado</th>
+								<th>Local/Setor</th>
+								<th>Problema detectado</th>
+							</tr>
+							
+							<!-- ut:repeat var="" e value="" -->
+							
+							<tr>
+								<td>Maquina pingando e gelando pouco</td>
+								<td>Gerente Adjunta</td>
+								<td>Vazamento de gás nas conexões</td>
+							</tr>
+							
+							<tr>
+								<td>Maquina suja e pingando</td>
+								<td>Reunião</td>
+								<td>Maquina suja com o dreno entupido</td>
+							</tr>
+						</table>
+				</fieldset><br />
+				
+				<fieldset>				
+					<legend>Ação</legend>
+						<table>
+							<tr>
+								<th>Local/Setor</th>
+								<th>Procedimento realizado</th>
+								<th>Data</th>
+								<th>Valor</th>
+								<th>Adicionar</th>
+							</tr>
+							
+							<tr>
+								<td>
+									<input type="text" jsf:value="" id="local" jsf:label="Local"></input>
+								</td>
+								<td>
+									<input type="text" jsf:value="" id="procedimento" jsf:label="Procedimento"></input>
+								</td>
+								<td>
+									<input type="date" jsf:value="" id="data" jsf:label="Data"></input>
+								</td>
+								<td>
+									<input type="text" jsf:value="" id="valor" maxlength="10" jsf:label="Valor"></input>
+								</td>
+								<td>
+									<input type="button" value="Adicionar" id="adicionar" jsf:label="Botao"></input>
+								</td>	
+							</tr>
+						</table>
+				</fieldset><br />			
+				
+				<!-- jsf:action="" após value="Gravar"-->
+				<input type="submit" value="Gravar" />
+				
+		</form>
+		</ui:define>
+	</ui:composition>
+</html>

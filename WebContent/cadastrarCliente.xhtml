@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+	
+	<ui:composition template="layoutPage.xhtml">
+		<!--  Cabeçalho - Fim -->
+		
+		<ui:define name="conteudo" >
+		<form jsf:id="form">
+				<input type="hidden" jsf:value="" />
+				
+				<fieldset>
+					<legend>Cadastro do Cliente</legend>
+						<label for="cnpj">CNPJ</label><br />
+						<input type="text" jsf:value="" id="cnpj" maxlength="32" jsf:label="CNPJ"/><br />
+						
+						<label for="nome">Nome</label><br />
+						<input type="text" jsf:value="" id="nome" maxlength="64" jsf:label="Nome"/><br />
+						
+						<label for="rua">Rua</label><br />
+						<input type="text" jsf:value="" id="rua" maxlength="64" jsf:label="Rua"/><br />
+						
+						<label for="numero">Número</label><br />
+						<input type="text" jsf:value="" id="numero" maxlength="8" jsf:label="Numero"/><br />
+						
+						<label for="bairro">Bairro</label><br />
+						<input type="text" jsf:value="" id="bairro" maxlength="32" jsf:label="Bairro"/><br />
+						
+						<label for="cidade">Cidade</label><br />
+						<input type="text" jsf:value="" id="cidade" maxlength="32" jsf:label="Cidade"/><br />
+						
+						<label for="estado">Estado</label><br />
+						<select jsf:value=""  id="estado" size="0" jsf:label="Estado">
+							<f:selectItem itemLabel="Selecione" itemValue="" />
+						</select><br />
+						
+						<label for="cep">CEP</label><br />
+						<input type="text" jsf:value="" id="cep" maxlength="8" jsf:label="CEP"/><br />
+						
+						<label for="dddCelular">Telefone Comercial</label><br />
+						<input type="tel" jsf:value="" id="dddCelular" maxlength="2" jsf:label="DDD Celular"/>&#160;
+						<input type="tel" jsf:value="" id="numeroCelular" maxlength="9" jsf:label="Numero Celular"/><br />
+						
+						
+				</fieldset><br />
+				<!-- jsf:action="" após value="Gravar"-->
+				<input type="submit" value="Gravar" />
+				
+		</form>
+		</ui:define>
+	</ui:composition>
+</html>
